@@ -271,18 +271,18 @@
                                 <color key="selectedSegmentTintColor" red="0.87843137250000003" green="0.99607843139999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TCk-bE-jOv">
-                                <rect key="frame" x="15" y="345" width="363" height="375"/>
+                                <rect key="frame" x="20" y="345" width="353" height="375"/>
                                 <color key="backgroundColor" red="0.094117647060000004" green="0.1450980392" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableviewCell" rowHeight="200" id="FO6-cT-VcX" customClass="TableViewCell" customModule="_FIT" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="363" height="200"/>
+                                        <rect key="frame" x="0.0" y="50" width="353" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FO6-cT-VcX" id="oqt-FP-BEZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="363" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sGM-Qx-r63">
-                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="200"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="200"/>
                                                     <color key="backgroundColor" red="0.094117647060000004" green="0.1450980392" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="k5B-MT-ePQ">
                                                         <size key="itemSize" width="360" height="180"/>
@@ -368,6 +368,7 @@
                         <color key="backgroundColor" red="0.094117647060000004" green="0.1450980392" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" systemColor="linkColor"/>
                         <constraints>
+                            <constraint firstItem="TCk-bE-jOv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4a5-ZF-9eZ"/>
                             <constraint firstAttribute="trailing" secondItem="0r1-ua-JZa" secondAttribute="trailing" constant="15" id="5Yy-mZ-MEC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1ce-mW-Sww" secondAttribute="trailing" constant="16" id="8Yc-zH-eow"/>
                             <constraint firstItem="aNW-zd-pyr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ApJ-x4-Xra"/>
@@ -375,14 +376,13 @@
                             <constraint firstItem="0r1-ua-JZa" firstAttribute="top" secondItem="aNW-zd-pyr" secondAttribute="bottom" id="Mov-fm-YZX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TCk-bE-jOv" secondAttribute="bottom" id="O3H-rV-MBZ"/>
                             <constraint firstItem="1ce-mW-Sww" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="RTl-9f-eAL"/>
-                            <constraint firstItem="TCk-bE-jOv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="SAA-XC-Eee"/>
                             <constraint firstItem="5zW-7Q-lA7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="bG0-5W-om4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qEw-O2-ZFc" secondAttribute="trailing" constant="15" id="cj4-rG-bsR"/>
                             <constraint firstItem="qEw-O2-ZFc" firstAttribute="top" secondItem="0r1-ua-JZa" secondAttribute="bottom" constant="10" id="g5Z-PI-vh6"/>
                             <constraint firstItem="aNW-zd-pyr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="gym-kc-osC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TCk-bE-jOv" secondAttribute="trailing" constant="15" id="loG-bb-cqd"/>
                             <constraint firstItem="CkB-wJ-yrE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="m1S-eM-vPn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5zW-7Q-lA7" secondAttribute="trailing" constant="15" id="mrM-1H-kIi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TCk-bE-jOv" secondAttribute="trailing" constant="20" id="obc-LV-qHw"/>
                             <constraint firstItem="TCk-bE-jOv" firstAttribute="top" secondItem="5zW-7Q-lA7" secondAttribute="bottom" id="q5r-sk-LBl"/>
                             <constraint firstItem="0r1-ua-JZa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="vk2-mw-WqG"/>
                             <constraint firstItem="5zW-7Q-lA7" firstAttribute="top" secondItem="CkB-wJ-yrE" secondAttribute="bottom" constant="8" symbolic="YES" id="z33-ti-K8H"/>

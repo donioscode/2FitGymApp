@@ -10,6 +10,7 @@ import UIKit
 class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
+     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -34,7 +35,7 @@ extension TableViewCell: UICollectionViewDelegate,UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath)as! CollectionViewCell
-        cell.images.image = UIImage(named: data[collectionView.tag].images[indexPath.section])
+        cell.images.image = UIImage(named: data[collectionView.tag].images[indexPath.row])
         return cell
     }
 }

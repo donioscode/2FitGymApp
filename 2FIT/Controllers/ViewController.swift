@@ -7,7 +7,7 @@
 
 import UIKit
 
-var data = [ExerciseContentData(sectionType: "kiii", images:["Image2"]),
+var data = [ExerciseContentData(sectionType: "kiii", images:["Image1","Image2"]),
             ExerciseContentData(sectionType: "New Workouts", images:["Image2","Image3","Image4"])]
 
 class ViewController: UIViewController {
