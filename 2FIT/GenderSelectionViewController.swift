@@ -13,7 +13,6 @@ class GenderSelectionViewController: UIViewController {
     @IBOutlet weak var genderGirlIcon: UIImageView!
     
     @IBOutlet weak var womanView: UIView!
-    
     @IBOutlet weak var manView: UIView!
     
     override func viewDidLoad() {
@@ -24,6 +23,9 @@ class GenderSelectionViewController: UIViewController {
         womanView.layer.borderWidth = 2
         womanView.layer.borderColor = UIColor.white.cgColor
         womanView.layer.cornerRadius = 10
+        manView.layer.borderWidth = 2
+        manView.layer.borderColor = UIColor.white.cgColor
+        manView.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
     
