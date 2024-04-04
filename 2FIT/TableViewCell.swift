@@ -30,7 +30,7 @@ class TableViewCell: UITableViewCell {
 extension TableViewCell: UICollectionViewDelegate,UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data[collectionView.tag].sectionType.count
+        return data[collectionView.tag].images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

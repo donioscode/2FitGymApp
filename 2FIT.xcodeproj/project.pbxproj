@@ -13,12 +13,13 @@
 		9137A7502B7CCDA600537C2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9137A74E2B7CCDA600537C2C /* Main.storyboard */; };
 		9137A7522B7CCDA700537C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9137A7512B7CCDA700537C2C /* Assets.xcassets */; };
 		9137A7552B7CCDA700537C2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9137A7532B7CCDA700537C2C /* LaunchScreen.storyboard */; };
+		916EFD202BBE8D950045C401 /* GenderSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916EFD1F2BBE8D950045C401 /* GenderSelectionViewController.swift */; };
 		91A0C2992BBD49E900AD5AFC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0C2982BBD49E900AD5AFC /* CollectionViewCell.swift */; };
 		91A0C29B2BBD4A1700AD5AFC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0C29A2BBD4A1700AD5AFC /* TableViewCell.swift */; };
 		91BFB3262BBAEC65007EC25A /* PersonalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BFB3252BBAEC65007EC25A /* PersonalTableViewController.swift */; };
 		91C702FF2BBAC470008CD352 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C702FE2BBAC470008CD352 /* PersonalViewController.swift */; };
 		91DF6C442BB5484500F2164D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF6C432BB5484500F2164D /* Model.swift */; };
-		91F158F82BB57AB1007AF26E /* OldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F158F72BB57AB1007AF26E /* OldViewController.swift */; };
+		91F158F82BB57AB1007AF26E /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F158F72BB57AB1007AF26E /* AgeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +31,13 @@
 		9137A7512B7CCDA700537C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9137A7542B7CCDA700537C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9137A7562B7CCDA700537C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		916EFD1F2BBE8D950045C401 /* GenderSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectionViewController.swift; sourceTree = "<group>"; };
 		91A0C2982BBD49E900AD5AFC /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		91A0C29A2BBD4A1700AD5AFC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		91BFB3252BBAEC65007EC25A /* PersonalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTableViewController.swift; sourceTree = "<group>"; };
 		91C702FE2BBAC470008CD352 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		91DF6C432BB5484500F2164D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		91F158F72BB57AB1007AF26E /* OldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldViewController.swift; sourceTree = "<group>"; };
+		91F158F72BB57AB1007AF26E /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				91A0C2962BBD397100AD5AFC /* App */,
 				9106E5282B95CAE600E7326D /* Model */,
 				9137A74E2B7CCDA600537C2C /* Main.storyboard */,
+				916EFD1F2BBE8D950045C401 /* GenderSelectionViewController.swift */,
 				9137A7512B7CCDA700537C2C /* Assets.xcassets */,
 				9137A7532B7CCDA700537C2C /* LaunchScreen.storyboard */,
 				9137A7562B7CCDA700537C2C /* Info.plist */,
@@ -102,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				91C702FE2BBAC470008CD352 /* PersonalViewController.swift */,
-				91F158F72BB57AB1007AF26E /* OldViewController.swift */,
+				91F158F72BB57AB1007AF26E /* AgeViewController.swift */,
 				91BFB3252BBAEC65007EC25A /* PersonalTableViewController.swift */,
 				9137A74C2B7CCDA600537C2C /* ViewController.swift */,
 			);
@@ -184,8 +187,9 @@
 				9137A7492B7CCDA600537C2C /* AppDelegate.swift in Sources */,
 				91A0C2992BBD49E900AD5AFC /* CollectionViewCell.swift in Sources */,
 				91A0C29B2BBD4A1700AD5AFC /* TableViewCell.swift in Sources */,
+				916EFD202BBE8D950045C401 /* GenderSelectionViewController.swift in Sources */,
 				9137A74B2B7CCDA600537C2C /* SceneDelegate.swift in Sources */,
-				91F158F82BB57AB1007AF26E /* OldViewController.swift in Sources */,
+				91F158F82BB57AB1007AF26E /* AgeViewController.swift in Sources */,
 				91C702FF2BBAC470008CD352 /* PersonalViewController.swift in Sources */,
 				91DF6C442BB5484500F2164D /* Model.swift in Sources */,
 				91BFB3262BBAEC65007EC25A /* PersonalTableViewController.swift in Sources */,
