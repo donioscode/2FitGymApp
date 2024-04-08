@@ -17,6 +17,7 @@
 		91A0C2992BBD49E900AD5AFC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0C2982BBD49E900AD5AFC /* CollectionViewCell.swift */; };
 		91A0C29B2BBD4A1700AD5AFC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0C29A2BBD4A1700AD5AFC /* TableViewCell.swift */; };
 		91BFB3262BBAEC65007EC25A /* PersonalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BFB3252BBAEC65007EC25A /* PersonalTableViewController.swift */; };
+		91C51BEA2BC3BA6200A2A6CD /* WorkoutListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C51BE92BC3BA6200A2A6CD /* WorkoutListViewController.swift */; };
 		91C702FF2BBAC470008CD352 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C702FE2BBAC470008CD352 /* PersonalViewController.swift */; };
 		91DF6C442BB5484500F2164D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF6C432BB5484500F2164D /* Model.swift */; };
 		91F158F82BB57AB1007AF26E /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F158F72BB57AB1007AF26E /* AgeViewController.swift */; };
@@ -35,6 +36,7 @@
 		91A0C2982BBD49E900AD5AFC /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		91A0C29A2BBD4A1700AD5AFC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		91BFB3252BBAEC65007EC25A /* PersonalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTableViewController.swift; sourceTree = "<group>"; };
+		91C51BE92BC3BA6200A2A6CD /* WorkoutListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListViewController.swift; sourceTree = "<group>"; };
 		91C702FE2BBAC470008CD352 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		91DF6C432BB5484500F2164D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		91F158F72BB57AB1007AF26E /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				91C702FE2BBAC470008CD352 /* PersonalViewController.swift */,
 				91F158F72BB57AB1007AF26E /* AgeViewController.swift */,
 				91BFB3252BBAEC65007EC25A /* PersonalTableViewController.swift */,
+				91C51BE92BC3BA6200A2A6CD /* WorkoutListViewController.swift */,
 				9137A74C2B7CCDA600537C2C /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -193,6 +196,7 @@
 				91C702FF2BBAC470008CD352 /* PersonalViewController.swift in Sources */,
 				91DF6C442BB5484500F2164D /* Model.swift in Sources */,
 				91BFB3262BBAEC65007EC25A /* PersonalTableViewController.swift in Sources */,
+				91C51BEA2BC3BA6200A2A6CD /* WorkoutListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +362,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "doniyornormuxammedov.-FIT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -385,6 +393,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "doniyornormuxammedov.-FIT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

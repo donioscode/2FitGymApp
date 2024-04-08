@@ -15,6 +15,9 @@ class GenderSelectionViewController: UIViewController {
     @IBOutlet weak var womanView: UIView!
     @IBOutlet weak var manView: UIView!
     
+    @IBOutlet weak var stackviewman: UIStackView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,9 +30,17 @@ class GenderSelectionViewController: UIViewController {
         manView.layer.borderColor = UIColor.white.cgColor
         manView.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
+        stackviewman.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(stackviewClicked)))
+
+    }
+    @objc func stackviewClicked(){
+        stackviewman.backgroundColor = .blue
     }
     
     
+   
+    
+
     
     @IBAction func continueButtonTapped(_ sender: Any) {
         
