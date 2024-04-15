@@ -259,6 +259,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="See all"/>
+                                <connections>
+                                    <segue destination="1h7-M1-DIa" kind="show" id="gOQ-M6-YuB"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5zW-7Q-lA7">
                                 <rect key="frame" x="15" y="314" width="363" height="32"/>
@@ -394,17 +397,16 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="TCk-bE-jOv" id="dQI-Bm-DIH"/>
-                        <segue destination="1h7-M1-DIa" kind="show" id="x3R-mG-ta0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="480.15267175572518" y="-300"/>
         </scene>
-        <!--View Controller-->
+        <!--Workout List View Controller-->
         <scene sceneID="DZ7-Eo-QIa">
             <objects>
-                <viewController id="1h7-M1-DIa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WorkoutListViewController" id="1h7-M1-DIa" customClass="WorkoutListViewController" customModule="_FIT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jQk-bj-1ux">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -425,7 +427,7 @@
                                 <rect key="frame" x="0.0" y="133" width="393" height="587"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="200" id="kT2-cd-fTO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableViewCell" rowHeight="200" id="kT2-cd-fTO" customClass="TableViewCell" customModule="_FIT" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kT2-cd-fTO" id="86F-17-GRF">
@@ -501,6 +503,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1h7-M1-DIa" id="NQp-Tm-gpd"/>
+                                    <outlet property="delegate" destination="1h7-M1-DIa" id="gMs-l4-g0Z"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aUY-dD-fKd"/>
@@ -516,6 +522,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EE6-la-srB"/>
+                    <connections>
+                        <outlet property="segmentUI" destination="0Xe-qU-Lei" id="prd-LF-bTR"/>
+                        <outlet property="tableView" destination="JSZ-jS-nGR" id="R1b-ve-Dai"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xfh-IT-MRG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1074,10 +1084,10 @@
                                         <rect key="frame" x="18" y="8" width="99" height="112"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" image="photo.artframe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="F3E-2s-sue">
-                                                <rect key="frame" x="37.666666666666657" y="1.6666666666666643" width="23.666666666666671" height="88.666666666666686"/>
+                                                <rect key="frame" x="37.666666666666657" y="1.6666666666666643" width="23.666666666666671" height="17.333333333333336"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Woman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6s-CC-KzL">
-                                                <rect key="frame" x="20.666666666666654" y="91.666666666666686" width="57.666666666666657" height="20.333333333333329"/>
+                                                <rect key="frame" x="20.666666666666654" y="20.333333333333321" width="57.666666666666657" height="91.666666666666686"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>

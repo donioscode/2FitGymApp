@@ -14,15 +14,27 @@ var data = [ExerciseContentData(sectionType: "", images:["Image1","Image2"]),
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var seeAll: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
    override func viewDidLoad() {
         super.viewDidLoad()
        tableView.sectionHeaderTopPadding = 0
-      
+       seeAll.addTarget(self, action: #selector(tapOnBtn), for: .touchUpInside)
+     
   }
+    
+    //MARK: - onClick Method
+    @objc func tapOnBtn () {
+        let story = UIStoryboard(name: "main", bundle: nil)
+        let controller = story.instantiateViewController(withIdentifier: "WorkoutListViewController") as! WorkoutListViewController
+        let navigation = UINavigationController(rootViewController: controller)
+        self.view.addSubview(navigation.view)
+        self.addChild(navigation)
+        navigation.didMove(toParent: self)
+    }
+   
 }
-
 
 extension ViewController: UITableViewDelegate,UITableViewDataSource {
     
